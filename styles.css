@@ -1,9 +1,36 @@
+/* site wide */
+
 body {
-    background-color: antiquewhite;
+    background-color: rgb(252, 240, 225);
 }
-#title {
-    font-size: large;
+
+.pagenav {
+    text-align: center;
+    font-size: 150%;
 }
-.desc {
-    color: aquamarine;
+
+.pagenav a:hover {
+    color: rgb(0, 139, 139);
+}
+
+h1,
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* home page */
+
+.disclaimer {
+    color: rgb(250, 139, 4);
+    text-align: center;
+}
+
+/* animal subpage */
+
+.animaltitle {
+    text-align: center;
+}
+
+section p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
