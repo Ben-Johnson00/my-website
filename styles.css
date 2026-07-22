@@ -175,4 +175,11 @@ section p {
     margin: auto;
     width: 100%;
 }
+.lizardcontent {
+    line-height: 2em;
+    width: 49%; 
+    float: none;
+    margin-left: 0;
+
+}
 }
