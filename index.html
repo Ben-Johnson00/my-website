@@ -7,28 +7,44 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is a website dedicated to one individual's likes. *DISCLAIMER* This website is a project for a web development class ">
+    <meta name="description"
+        content="This is a website dedicated to one individual's likes. *DISCLAIMER* This website is a project for a web development class ">
     <title> Things I like </title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 <!-- the body represents the content of the website -->
 
 <body>
+            <!-- pagenav represents the line that will house the links to other pages -->
+        <nav class="pagenav">
+            <ul>
+                <li> <a href="subpages/animalspage.html"> [Animals] </a> </li>
+                <li> <a href="subpages/musicpage.html"> [Music] </a> </li>
+                <li> <a href="subpages/subpage3.html"> [Page3] </a> </li>
+            </ul>
+        </nav>
     <main>
-        <!-- pagenav represents the line that will house the links to other pages -->
-        <p class="pagenav"> <a href="subpages/animalspage.html"> [Animals] </a> <a href="subpages/musicpage.html"> [Music] </a> <a href="subpages/subpage3.html"> [Page3] </a> </p>
         <h1 class="disclaimer"> <strong> *DISCLAIMER* </strong> </h1>
         <h2 class="disclaimer"> This website is a project for a web development class </h2>
         <br>
         <h3 id="homedesc"> This website will be dedicated to multiple things I like, appreciate, and enjoy. </h3>
-        <p> Hello, my name is Ben, and this is the webpage that I am making for my web development class. This site will have three catagories, each with their own subpage.
-             As of right now, there is only content on the animal and music subpage linked above and below. </p>
+        <p> Hello, my name is Ben, and this is the webpage that I am making for my web development class. This site will
+            have three catagories, each with their own subpage.
+            As of right now, there is only content on the animal and music subpage linked above and below. </p>
         <p> As this page feels barren, I will put in a picture of a cat below. </p>
-        <img src="images/homeimages/catplaceholder.png" alt="A picture of a cat">
+        <img id="homecatimage" src="images/homeimages/catplaceholder.png" alt="A picture of a cat">
+        <p><a href="https://ben-johnson00.github.io/outsidewebsite/" target="_blank"> Outside website link </a></p>
     </main>
-    <footer> 
-       <p class="pagenav"> <a href="subpages/animalspage.html"> [Animals] </a> <a href="subpages/musicpage.html"> [Music] </a> <a href="subpages/subpage3.html"> [Page3] </a> </p>
+    <footer>
+        <nav class="pagenav">
+            <ul>
+                <li> <a href="subpages/animalspage.html"> [Animals] </a> </li>
+                <li> <a href="subpages/musicpage.html"> [Music] </a> </li>
+                <li> <a href="subpages/subpage3.html"> [Page3] </a> </li>
+            </ul>
+        </nav>
     </footer>
 </body>
 <!--design notes: maybe for the next subpages make titles in italics and creators in bold?-->
+
 </html>
