@@ -14,37 +14,49 @@
 </head>
 <!-- the body represents the content of the website -->
 
-<body>
+<body class="homebody">
             <!-- pagenav represents the line that will house the links to other pages -->
         <nav class="pagenav">
             <ul>
-                <li> <a href="subpages/animalspage.html"> [Animals] </a> </li>
-                <li> <a href="subpages/musicpage.html"> [Music] </a> </li>
-                <li> <a href="subpages/subpage3.html"> [Page3] </a> </li>
+                <li> <a class="pagenavanimal" href="subpages/animalspage.html"> [Animals] </a> </li>
+                <li> <a class="pagenavmusic" href="subpages/musicpage.html"> [Music] </a> </li>
+                <li> <a class="pagenavgame" href="subpages/videogamepage.html"> [Video games] </a> </li>
             </ul>
         </nav>
-    <main>
-        <h1 class="disclaimer"> <strong> *DISCLAIMER* </strong> </h1>
-        <h2 class="disclaimer"> This website is a project for a web development class </h2>
+    <main class="homegridcontainer">
+        <section class="homeheader">
+        <h2 class="disclaimer"> <strong> *DISCLAIMER* </strong> </h2>
+        <h3 class="disclaimer"> This website is a project for a web development class </h3>
+        <h1 class="hometitle">Home</h1>
+        </section>
+        <section class="homecontent">
         <br>
-        <h3 id="homedesc"> This website will be dedicated to multiple things I like, appreciate, and enjoy. </h3>
-        <p> Hello, my name is Ben, and this is the webpage that I am making for my web development class. This site will
-            have three catagories, each with their own subpage.
-            As of right now, there is only content on the animal and music subpage linked above and below. </p>
-        <p> As this page feels barren, I will put in a picture of a cat below. </p>
-        <img id="homecatimage" src="images/homeimages/catplaceholder.png" alt="A picture of a cat">
-        <p><a href="https://ben-johnson00.github.io/outsidewebsite/" target="_blank"> Outside website link </a></p>
+        <h2 id="homedesc"> This website will be dedicated to multiple <div class="homedescdiv">things I like, appreciate, and enjoy.</div> </h2>
+        <p class="homeintro"> Hello, my name is Ben, and this is the webpage that I am making for my web development class. This site will
+            have three catagories, each with their own subpage. Links to said pages will be found on the top and bottom of all pages. </p>
+            <p class="homeintro">Here I will list the included catagories that the subpages are dedicated to:</p>
+            <ul class="homelistcontainer">
+                <li class="homelist"><div class="homeanimallist">Animals</div></li>
+                <li class="homelist"><div class="homemusiclist">Music</div></li>
+                <li class="homelist">Video games</li>
+            </ul>
+        <p class="homeintro"> As this page feels barren, I will put in pictures of cats below. </p>
+        </section>
+        <img class="homecatimage" src="images/homeimages/catplaceholder.png" alt="A picture of a cat">
+        <img class="homecatimage2" src="images/homeimages/secondcatplaceholder.jpg" alt="A picture of a cat">
+        <img class="homecatimage3" src="images/homeimages/thirdcatplaceholder.jpg" alt="A picture of a cat">
     </main>
-    <footer>
+    <footer class="homefooter">
+        <p><a href="https://ben-johnson00.github.io/outsidewebsite/" target="_blank"> Outside website link </a></p>
+    </footer>
         <nav class="pagenav">
             <ul>
-                <li> <a href="subpages/animalspage.html"> [Animals] </a> </li>
-                <li> <a href="subpages/musicpage.html"> [Music] </a> </li>
-                <li> <a href="subpages/subpage3.html"> [Page3] </a> </li>
+                <li> <a class="pagenavanimal" href="subpages/animalspage.html"> [Animals] </a> </li>
+                <li> <a class="pagenavmusic" href="subpages/musicpage.html"> [Music] </a> </li>
+                <li> <a class="pagenavgame" href="subpages/videogamepage.html"> [Video games] </a> </li>
             </ul>
         </nav>
-    </footer>
 </body>
-<!--design notes: maybe for the next subpages make titles in italics and creators in bold?-->
+<!-- *OLD* design notes: maybe for the next subpages make titles in italics and creators in bold?-->
 
 </html>

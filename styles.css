@@ -8,30 +8,34 @@ main {
     clear: left;
 }
 
+
 .pagenav {
-    padding-bottom: 2em;
-    padding-top: 2em;
-    width: 100%;
-    padding-left: 3em;
-    margin-right: 1em;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .pagenav ul {
+    padding-left: 0px;
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .pagenav ul li {
-    float: left;
-    width: 30%;
     padding-bottom: 1em;
-    padding-right: 5px;
-    padding-left: 5px;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .pagenav ul li a {
     text-align: center;
-    display: block;
-    padding: 1em 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     text-decoration: none;
     background-color: rgb(63, 1, 113);
     color: rgb(255, 255, 255);
@@ -40,96 +44,193 @@ main {
     border: 5px solid rgb(0, 0, 0);
 }
 
+.pagenavanimal {
+    padding-left: 19px;
+    padding-right: 19px;
+}
+
+.pagenavmusic {
+    padding-left: 26px;
+    padding-right: 26px;
+}
+
+.pagenavgame {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.pagenavhome {
+    padding-left: 26px;
+    padding-right: 26px;
+}
+
 
 
 .pagenav a:hover {
     color: rgb(2, 249, 43);
 }
 
-
-
-
-
-h1, h2 {
+h1,
+h2 {
     font-family: 'Times New Roman', Times, serif;
 }
 
 .returntopplaceholder {
     text-align: center;
-    margin-left: 3em;
+    margin-right: 2%;
+    margin-left: 1%;
 }
 
 /* home page */
 
 .disclaimer {
-    color: rgb(250, 139, 4);
+    color: rgb(247, 170, 5);
     text-align: center;
     font-weight: bolder;
 }
 
-#homecatimage {
-    width: 25%;
-    min-width: 250px;
+.homecatimage {
+    width: 90%;
+    aspect-ratio: 10 / 10;
+    margin: auto;
 }
+
+.homecatimage2 {
+    width: 90%;
+    aspect-ratio: 10 / 10;
+    margin: auto;
+}
+
+.homecatimage3 {
+    width: 90%;
+    aspect-ratio: 10 / 10;
+    margin: auto;
+}
+
+.hometitle {
+    text-align: center;
+}
+
+.homeintro {
+    max-width: 60%;
+    text-align: center;
+    margin: auto;
+}
+.homelistcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.homeanimallist {
+    width: 82px;
+
+}
+.homemusiclist {
+    width: 83px;
+
+}
+
+#homedesc {
+    margin: auto;
+    text-align: center;
+}
+
+.homedescdiv {
+    display: inline;
+    margin: auto;
+    text-align: center;
+}
+
+.homegridcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr;
+    grid-gap: 16px;
+    grid-template-areas:
+        "hed hed hed"
+        "con con con"
+        "img img2 img3"
+        "fot fot fot"
+}
+
+.homeheader {
+    grid-area: hed;
+}
+
+.homecontent {
+    grid-area: con;
+}
+
+.homecatimage {
+    grid-area: img;
+}
+
+.homecatimage2 {
+    grid-area: img2;
+}
+
+.homecatimage3 {
+    grid-area: img3;
+}
+
+.homefooter {
+    grid-area: fot;
+}
+
+
+
+
 
 /* animal subpage */
-
+/* here i was attempting to have the text change into two different lines at different screen resolutions but it did not work as intended. */
 .animaltitle {
     text-align: center;
-    font-weight: bolder;
-    font-family: 'Times New Roman', Times, serif;
+}
+
+.animaltextbreak {
+    display: inline;
+}
+
+.animaltextbreak2 {
+    display: inline;
+}
+.animalcontent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1px;
+}
+.animalimage {
+    aspect-ratio: 10 / 7;
+    max-width: 600px;
+    width: 100%;
+}
+.animalboxcontent {
+    text-align: center;
+    width: 600px;
+}
+.animalboxtitle {
+    font-weight: bold;
+    font-size: 150%;
 }
 
 section p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.catcontent {
-    line-height: 2em;
-    float: left;
-    width: 49%;
-}
-
-.lizardcontent {
-    line-height: 2em;
-    float: left;
-    width: 49%;
-    margin-left: 1em;
-}
-
-.birdcontent {
-    line-height: 2em;
-    float: left;
-    width: 49%;
-    margin-right: 5em;
-}
-
-#animalseparator {
-    clear: both;
-}
-
-.catimagebox {
-    background: url(images/animalimages/cat.jpg) no-repeat;
-    background-size: 100%;
-    width: 20%;
-    padding: 8em 8em;
-}
-
-.lizardimagebox {
-    background: url(images/animalimages/lizard.jpg) no-repeat;
-    background-size: 100%;
-    width: 20%;
-    padding: 8em 8em;
-}
-
-.birdimagebox {
-    background: url(images/animalimages/bird.jpg) no-repeat;
-    background-size: 100%;
-    width: 20%;
-    padding: 8em 8em;
-}
-
 /* music subpage */
+.musicbody {
+    background: url(images/backgroundtest.jpg) repeat;
+}
+
+.musiccontainer {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+    padding-left: 0px;
+}
 
 #musictitle {
     text-align: center;
@@ -137,49 +238,272 @@ section p {
     font-family: 'Times New Roman', Times, serif;
 }
 
+/* this was my confusing attempt to organize the content on the music page */
+
 .musiccontent {
-    column-count: 3;
-    column-gap: 40px;
-    column-rule: 1em solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 150px;
+}
+
+
+.musicsection {
+    font-weight: bolder;
+    font-size: 20px;
+    break-inside: avoid;
+    flex: 1 1 250px;
+}
+
+.genretitle {
+    text-align: center;
+    font-size: 135%;
+    border-bottom: 5px solid rgb(0, 0, 0);
+}
+
+.artisttitle {
+    font-size: 135%;
+    border-bottom: 5px solid rgb(0, 0, 0);
+}
+
+.songtitle {
+    font-size: 135%;
+    border-bottom: 5px solid rgb(0, 0, 0);
+}
+
+.musicdescdiv {
+    display: inline;
+}
+
+/* subpage3 */
+.gamecontent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 150px;
+}
+
+.contentbox {
+    text-align: center;
+    height: 600px;
+
+}
+.gameimages {
+    aspect-ratio: 11 / 15;
+    max-width: 250px;
+    width: 100%;
+}
+.gameinsidedesc {
+    max-width:250px;
+}
+.gameinsidetitle {
+    max-width: 250px;
+    font-weight: bolder;
+    font-size: 150%;
+    height: 50px;
+}
+.gametitle {
     text-align: center;
 }
-
-.genresection {
-    font-weight: bolder;
-    font-size: 20px;
-    break-inside: avoid;
+.gamedescdiv {
+    display: inline;
 }
-
-.artistsection {
-    font-weight: bolder;
-    font-size: 20px;
-    break-inside: avoid;
-}
-
-.songsection {
-    font-weight: bolder;
-    font-size: 20px;
-    break-inside: avoid;
+.gamedescdiv2 {
+    display: inline;
 }
 
 /* media */
+@media only screen and (max-width: 1075px) {
+    .musiccontent {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        text-align: center;
+        gap: 149px;
+    }
+    .gamedescdiv {
+        display: block;
+    }
+    .gamedescdiv2 {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 1012px) {
+    .animaltextbreak {
+        display: block;
+    }
+
+    .animaltextbreak2 {
+        display: block;
+    }
+
+}
+@media only screen and (max-width: 954px) {
+    .homeintro {
+        width: 400px;
+    }
+}
 
 @media only screen and (max-width: 901px) {
-.pagenav ul li {
-    float: none;
-    width: 65%;
- }
- .pagenav {
-    padding-bottom: 2em;
-    padding-top: 2em;
-    margin: auto;
-    width: 100%;
-}
-.lizardcontent {
-    line-height: 2em;
-    width: 49%; 
-    float: none;
-    margin-left: 0;
+    .homeintro {
+        width: 350px;
+    }
+
+    .homegridcontainer {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-gap: 16px;
+        grid-template-areas:
+            "hed"
+            "con"
+            "img"
+            "img2"
+            "img3"
+            "fot"
+    }
+
+    .homeheader {
+        grid-area: hed;
+    }
+
+    .homecontent {
+        grid-area: con;
+    }
+
+    .homecatimage {
+        grid-area: img;
+    }
+
+    .homecatimage2 {
+        grid-area: img2;
+    }
+
+    .homecatimage3 {
+        grid-area: img3;
+    }
+
+    .homefooter {
+        grid-area: fot;
+    }
+
+    .homecatimage {
+        width: 50%;
+    }
+
+    .homecatimage2 {
+        width: 50%;
+    }
+
+    .homecatimage3 {
+        width: 50%;
+    }
+
+    .gamecontent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width:100%;
+    }
+
+    .contentbox {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .gameimages {
+        width: 70%;
+        margin: auto;
+        height: 50%;
+        max-width: 234.075px;
+    }
+    .gameinsidedesc {
+        margin: 0 auto;
+        width: 300px;
+        max-width: none;
+    }
+    .gameinsidetitle {
+        margin: 0 auto;
+        width: 250px;
+        height: 1px;
+        max-width: none;
+        margin-top: 4em;
+    }
+
+    .musicdescdiv {
+        display: block;
+    }
+
+    .homedescdiv {
+        display: block;
+    }
+
+    .pagenav ul li {
+        padding-top: 1em;
+        padding-bottom: 2em;
+
+    }
+
+    .pagenav {
+        padding-bottom: 2em;
+        padding-top: 2em;
+    }
+
+    .pagenav ul {
+        flex-direction: column;
+    }
+
+
+    .musiccontent {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .genretitle {
+        margin-left: 0%;
+        font-size: 135%;
+    }
+
+    .artisttitle {
+        font-size: 135%;
+        margin-right: 0%;
+    }
+
+    .songtitle {
+        font-size: 135%;
+        margin-right: 0%;
+    }
 
 }
+@media only screen and (max-width: 598px) {
+    .homeintro {
+        width: 160px;
+    }
+    #homedesc {
+        width: 250px;
+    }
+    .animaldesc {
+        width: 250px;
+    }
+    .gamedesc {
+        width: 250px;
+    }
+    .musiccontainer li {
+        width: 250px;
+    }
+
+
 }

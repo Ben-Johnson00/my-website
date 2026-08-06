@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is a website dedicated to one individual's likes. *DISCLAIMER* This website is a project for a web development class ">
+    <meta name="description"
+        content="This is a website dedicated to one individual's likes. *DISCLAIMER* This website is a project for a web development class ">
     <title>Animals I like</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
@@ -12,45 +13,54 @@
 <body>
         <nav class="pagenav">
             <ul>
-                <li> <a href="../index.html"> [Home] </a> </li>
-                <li> <a href="musicpage.html"> [Music] </a> </li>
-                <li> <a href="subpage3.html"> [Page3] </a> </li>
+                <li> <a class="pagenavhome" href="../index.html"> [Home] </a> </li>
+                <li> <a class="pagenavmusic" href="musicpage.html"> [Music] </a> </li>
+                <li> <a class="pagenavgame" href="videogamepage.html"> [Video games] </a> </li>
             </ul>
         </nav>
     <main>
         <h1 class="animaltitle"> Animals I like </h1>
-        <h2> <em> Here </em> I will list a few different animals and include pictures and the reasons I like said animals.  </h2>
+        <h2 class="animaldesc"> <em> Here </em> I will name a few different animals, <div class="animaltextbreak">and
+                include pictures <div class="animaltextbreak2">and the reasons I like said animals.</div>
+            </div>
+        </h2>
         <!-- this section contains all the animal related info -->
         <section class="animalcontent">
-            <ul>
-                <div class="catcontent">
-                    <li> Cats </li>
-                    <div class="catimagebox" alt="A picture of a cat"> </div>
-                <p> I appreciate the mischievious nature of them. </p>
-                </div>
-                <div class="lizardcontent">
-                <li> lizards </li>
-                <div class="lizardimagebox" alt="A picture of a lizard"> </div>
-                <p> I find the nature of lizards similar to cats, they share what looks like a lack of care, but lizards
+            <div class="animalboxcontent">
+                <p class="animalboxtitle"> Cats </p>
+                <img class="animalimage" src="../images/animalimages/cat.jpg" alt="A picture of a cat">
+                <p class="animalreason"> I appreciate the mischievious nature of them. </p>
+            </div>
+            <div class="animalboxcontent">
+                <p class="animalboxtitle"> lizards </p>
+                <img class="animalimage" src="../images/animalimages/lizard.jpg" alt="A picture of a lizard">
+                <p class="animalreason"> I find the nature of lizards similar to cats, they share what looks like a lack
+                    of care, but lizards
                     lack that catlike elegance that the cats posess. </p>
-                </div>
-                <div class="birdcontent">
-                <li> Birds </li>
-                <div class="birdimagebox" alt="A picture of a bird"> </div>
-                <p> I think birds are fairly interesting. They are as intelligent as they are goofy, which is an amazing
+            </div>
+            <div class="animalboxcontent">
+                <p class="animalboxtitle"> Birds </p>
+                <img class="animalimage" src="../images/animalimages/bird.jpg" alt="A picture of a bird">
+                <p class="animalreason"> I think birds are fairly interesting. They are as intelligent as they are
+                    goofy, which is an amazing
                     combination to me. </p>
-                </div>
-            </ul>
+            </div>
+            <div class="animalboxcontent">
+                <p class="animalboxtitle"> Pandas </p>
+                <img class="animalimage" src="../images/animalimages/panda.jpg" alt="A picture of a panda">
+                <p class="animalreason"> I like pandas because they are like a cross between the bears that we're
+                    familiar with and a sloth, making them a little less threatning and lessening what I consider to be
+                    the biggest negative of the bears we have here in Washington. </p>
+            </div>
         </section>
-        <br id="animalseparator">
     </main>
     <footer>
         <p class="returntopplaceholder"> <a href="#"> Return to the top of the page </a> </p>
         <nav class="pagenav">
             <ul>
-                <li> <a href="../index.html"> [Home] </a> </li>
-                <li> <a href="musicpage.html"> [Music] </a> </li>
-                <li> <a href="subpage3.html"> [Page3] </a> </li>
+                <li> <a class="pagenavhome" href="../index.html"> [Home] </a> </li>
+                <li> <a class="pagenavmusic" href="musicpage.html"> [Music] </a> </li>
+                <li> <a class="pagenavgame" href="videogamepage.html"> [Video games] </a> </li>
             </ul>
         </nav>
     </footer>
