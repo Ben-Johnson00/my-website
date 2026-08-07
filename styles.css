@@ -8,7 +8,6 @@ main {
     clear: left;
 }
 
-
 .pagenav {
     padding-bottom: 2%;
     padding-top: 2%;
@@ -63,8 +62,6 @@ main {
     padding-right: 26px;
 }
 
-
-
 .pagenav a:hover {
     color: rgb(2, 249, 43);
 }
@@ -73,11 +70,8 @@ h1,
 h2 {
     font-family: 'Times New Roman', Times, serif;
 }
-
-.returntopplaceholder {
-    text-align: center;
-    margin-right: 2%;
-    margin-left: 1%;
+figure {
+    margin: 0px 0px 0px 0px;
 }
 
 /* home page */
@@ -176,6 +170,12 @@ h2 {
     grid-area: fot;
 }
 
+.homefigure {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
 
 
 
@@ -220,9 +220,6 @@ section p {
 }
 
 /* music subpage */
-.musicbody {
-    background: url(images/backgroundtest.jpg) repeat;
-}
 
 .musiccontainer {
     display: flex;
@@ -289,13 +286,8 @@ section p {
 
 .contentbox {
     text-align: center;
-    height: 600px;
+    height: 270px;
 
-}
-.gameimages {
-    aspect-ratio: 11 / 15;
-    max-width: 250px;
-    width: 100%;
 }
 .gameinsidedesc {
     max-width:250px;
@@ -351,6 +343,9 @@ section p {
 }
 
 @media only screen and (max-width: 901px) {
+    .gameadd {
+        width: 270px;
+    }
     .homeintro {
         width: 350px;
     }
@@ -488,6 +483,7 @@ section p {
     }
 
 }
+/* this fixes awkward text breaks */
 @media only screen and (max-width: 598px) {
     .homeintro {
         width: 160px;
