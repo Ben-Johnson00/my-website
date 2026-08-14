@@ -43,6 +43,7 @@ main {
     border: 5px solid rgb(0, 0, 0);
 }
 
+/* this was done to make the nav bars the same width, I know now that I could've just made a box, put the text in and then increase the size of all the boxes */
 .pagenavanimal {
     padding-left: 19px;
     padding-right: 19px;
@@ -57,6 +58,7 @@ main {
     padding-left: 4px;
     padding-right: 4px;
 }
+
 .pagenavhome {
     padding-left: 26px;
     padding-right: 26px;
@@ -66,10 +68,6 @@ main {
     color: rgb(2, 249, 43);
 }
 
-h1,
-h2 {
-    font-family: 'Times New Roman', Times, serif;
-}
 figure {
     margin: 0px 0px 0px 0px;
 }
@@ -82,6 +80,7 @@ figure {
     font-weight: bolder;
 }
 
+/* considering i'm applying the same stats to three different elements, I feel I could've just made this one class and just attached said class to the three elements I've targeted. */
 .homecatimage {
     width: 90%;
     aspect-ratio: 10 / 10;
@@ -108,16 +107,20 @@ figure {
     max-width: 60%;
     text-align: center;
     margin: auto;
+    width: 700px;
 }
+
 .homelistcontainer {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .homeanimallist {
     width: 82px;
 
 }
+
 .homemusiclist {
     width: 83px;
 
@@ -134,6 +137,7 @@ figure {
     text-align: center;
 }
 
+/* the grid layout for the homepage. */
 .homegridcontainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -170,11 +174,16 @@ figure {
     grid-area: fot;
 }
 
+/* attempts to fix weird text breaks related to the figures attached to the images. */
 .homefigure {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
+}
+
+.homefigcaption {
+    max-height: 50px;
 }
 
 
@@ -193,6 +202,7 @@ figure {
 .animaltextbreak2 {
     display: inline;
 }
+
 .animalcontent {
     display: flex;
     flex-direction: row;
@@ -201,15 +211,18 @@ figure {
     flex-wrap: wrap;
     gap: 1px;
 }
+
 .animalimage {
     aspect-ratio: 10 / 7;
     max-width: 600px;
     width: 100%;
 }
+
 .animalboxcontent {
     text-align: center;
     width: 600px;
 }
+
 .animalboxtitle {
     font-weight: bold;
     font-size: 150%;
@@ -274,37 +287,52 @@ section p {
     display: inline;
 }
 
-/* subpage3 */
+/* game subpage */
 .gamecontent {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 150px;
 }
 
 .contentbox {
     text-align: center;
     height: 270px;
+    padding-left: 50px;
+    padding-right: 50px;
 
 }
+
 .gameinsidedesc {
-    max-width:250px;
+    max-width: 250px;
 }
+
 .gameinsidetitle {
     max-width: 250px;
     font-weight: bolder;
     font-size: 150%;
     height: 50px;
 }
+
 .gametitle {
     text-align: center;
 }
+
 .gamedescdiv {
     display: inline;
 }
+
 .gamedescdiv2 {
+    display: inline;
+}
+
+/* special font */
+.gamemain {
+    font-family: "Merriweather", serif;
+}
+
+.gameadddiv {
     display: inline;
 }
 
@@ -318,11 +346,23 @@ section p {
         text-align: center;
         gap: 149px;
     }
+
     .gamedescdiv {
         display: block;
     }
+
     .gamedescdiv2 {
         display: block;
+    }
+}
+
+/* implemented this query to convert the music content into a single column early as i felt it looked better that way */
+@media only screen and (max-width: 1065px) {
+    .musiccontent {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
     }
 }
 
@@ -335,7 +375,12 @@ section p {
         display: block;
     }
 
+    .homeintro {
+        width: 500px;
+    }
+
 }
+
 @media only screen and (max-width: 954px) {
     .homeintro {
         width: 400px;
@@ -344,12 +389,17 @@ section p {
 
 @media only screen and (max-width: 901px) {
     .gameadd {
-        width: 270px;
+        text-align: center;
     }
+
+    .gameadddiv {
+        display: block
+    }
+
     .homeintro {
         width: 350px;
     }
-
+/* used to convert the content on the home page from a grid like structure to a single vertical column */
     .homegridcontainer {
         display: grid;
         grid-template-columns: auto;
@@ -405,7 +455,7 @@ section p {
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        width:100%;
+        width: 100%;
     }
 
     .contentbox {
@@ -415,6 +465,8 @@ section p {
         align-items: center;
         width: 100%;
         text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .gameimages {
@@ -423,11 +475,13 @@ section p {
         height: 50%;
         max-width: 234.075px;
     }
+
     .gameinsidedesc {
         margin: 0 auto;
         width: 300px;
         max-width: none;
     }
+
     .gameinsidetitle {
         margin: 0 auto;
         width: 250px;
@@ -483,20 +537,42 @@ section p {
     }
 
 }
+
 /* this fixes awkward text breaks */
 @media only screen and (max-width: 598px) {
     .homeintro {
-        width: 160px;
+        width: 260px;
+        max-width: none;
     }
+
     #homedesc {
         width: 250px;
     }
+
     .animaldesc {
         width: 250px;
     }
+
     .gamedesc {
-        width: 250px;
+        width: 300px;
     }
+/* the four classes below targeted with display none are the icons, i made them stop rendering at a small resolution to stop a strange line break on one subpage, then figured i should apply this to all of them for consistency */
+    .gamepad {
+        display: none;
+    }
+
+    .musicnote {
+        display: none;
+    }
+
+    .paw {
+        display: none;
+    }
+
+    .house {
+        display: none;
+    }
+
     .musiccontainer li {
         width: 250px;
     }

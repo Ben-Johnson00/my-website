@@ -11,60 +11,77 @@
         content="This is a website dedicated to one individual's likes. *DISCLAIMER* This website is a project for a web development class ">
     <title> Things I like </title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/9366ab9695.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <!-- the body represents the content of the website -->
 
 <body class="homebody">
-            <!-- pagenav represents the line that will house the links to other pages -->
-        <nav class="pagenav">
-            <ul>
-                <li> <a class="pagenavanimal" href="subpages/animalspage.html"> [Animals] </a> </li>
-                <li> <a class="pagenavmusic" href="subpages/musicpage.html"> [Music] </a> </li>
-                <li> <a class="pagenavgame" href="subpages/videogamepage.html"> [Video games] </a> </li>
-            </ul>
-        </nav>
+    <!-- pagenav represents the line that will house the links to other pages -->
+    <nav class="pagenav">
+        <ul>
+            <li> <a class="pagenavanimal" href="subpages/animalspage.html"> [Animals] </a> </li>
+            <li> <a class="pagenavmusic" href="subpages/musicpage.html"> [Music] </a> </li>
+            <li> <a class="pagenavgame" href="subpages/videogamepage.html"> [Video games] </a> </li>
+        </ul>
+    </nav>
+    <!-- I put special classes into the icons on all pages to make them vanish at smaller resolutions as they cause awkward text breaks -->
     <main class="homegridcontainer">
         <section class="homeheader">
-        <h2 class="disclaimer"> <strong> *DISCLAIMER* </strong> </h2>
-        <h3 class="disclaimer"> This website is a project for a web development class </h3>
-        <h1 class="hometitle">Home</h1>
+            <h2 class="disclaimer"> <strong> *DISCLAIMER* </strong> </h2>
+            <h3 class="disclaimer"> This website is a project for a web development class </h3>
+            <h1 class="hometitle"><i class="fa-solid fa-house house"></i> Home <i class="fa-solid fa-house house"></i>
+            </h1>
         </section>
         <section class="homecontent">
-        <br>
-        <h2 id="homedesc"> This website will be dedicated to multiple <div class="homedescdiv">things I like, appreciate, and enjoy.</div> </h2>
-        <p class="homeintro"> Hello, my name is Ben, and this is the webpage that I am making for my web development class. This site will
-            have three catagories, each with their own subpage. Links to said pages will be found on the top and bottom of all pages. </p>
-            <p class="homeintro">Here I will list the included catagories that the subpages are dedicated to:</p>
+            <br>
+            <h2 id="homedesc"> This website will be dedicated to multiple <div class="homedescdiv">things I like,
+                    appreciate, and enjoy.</div>
+            </h2>
+            <p class="homeintro"> Hello, my name is Ben, and this is the webpage that I am making for my web development
+                class. This site will
+                have three catagories, each with their own subpage. Links to said pages will be found on the top and
+                bottom of all pages. </p>
+            <p class="homeintro">Here I will list the catagories that the subpages are dedicated to:</p>
+            <!-- classes are used on the home list for positioning -->
             <ul class="homelistcontainer">
-                <li class="homelist"><div class="homeanimallist">Animals</div></li>
-                <li class="homelist"><div class="homemusiclist">Music</div></li>
+                <li class="homelist">
+                    <div class="homeanimallist">Animals</div>
+                </li>
+                <li class="homelist">
+                    <div class="homemusiclist">Music</div>
+                </li>
                 <li class="homelist">Video games</li>
             </ul>
-        <p class="homeintro"> As this page feels barren, I will put in pictures of cats below. </p>
+            <p class="homeintro"> As this page feels barren, I will put in pictures of cats below. </p>
         </section>
         <figure class="homefigure">
-        <img class="homecatimage" src="images/homeimages/vhomecat1.jpg" alt="A picture of a cat">
-        <figcaption class="homefigcaption">"Cat" by PiNe87 is licensed under CC BY-NC-SA 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=openverse.</figcaption>
+            <img class="homecatimage" src="images/homeimages/vhomecat1.jpg" alt="A picture of a cat">
+            <figcaption class="homefigcaption">"Cat" by PiNe87 is licensed under CC BY-NC-SA 2.0. To view a copy of this
+                license, visit https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=openverse.</figcaption>
         </figure>
         <figure class="homefigure">
-        <img class="homecatimage2" src="images/homeimages/vhomecat2.jpg" alt="A picture of a cat">
-        <figcaption>"Cat" by sfllaw is licensed under CC BY-SA 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/2.0/?ref=openverse.</figcaption>
+            <img class="homecatimage2" src="images/homeimages/vhomecat2.jpg" alt="A picture of a cat">
+            <figcaption class="homefigcaption">"Cat" by sfllaw is licensed under CC BY-SA 2.0. To view a copy of this
+                license, visit
+                https://creativecommons.org/licenses/by-sa/2.0/?ref=openverse.</figcaption>
         </figure>
         <figure class="homefigure">
-        <img class="homecatimage3" src="images/homeimages/vhomecat3.jpg" alt="A picture of a cat">
-        <figcaption>"Linda (Rita's cat)" by MissBlythe is licensed under CC BY-NC-ND 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=openverse.</figcaption>
+            <img class="homecatimage3" src="images/homeimages/vhomecat3.jpg" alt="A picture of a cat">
+            <figcaption class="homefigcaption">"Linda (Rita's cat)" by MissBlythe is licensed under CC BY-NC-ND 2.0. To
+                view a copy of this
+                license, visit https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=openverse.</figcaption>
         </figure>
     </main>
     <footer class="homefooter">
     </footer>
-        <nav class="pagenav">
-            <ul>
-                <li> <a class="pagenavanimal" href="subpages/animalspage.html"> [Animals] </a> </li>
-                <li> <a class="pagenavmusic" href="subpages/musicpage.html"> [Music] </a> </li>
-                <li> <a class="pagenavgame" href="subpages/videogamepage.html"> [Video games] </a> </li>
-            </ul>
-        </nav>
+    <nav class="pagenav">
+        <ul>
+            <li> <a class="pagenavanimal" href="subpages/animalspage.html"> [Animals] </a> </li>
+            <li> <a class="pagenavmusic" href="subpages/musicpage.html"> [Music] </a> </li>
+            <li> <a class="pagenavgame" href="subpages/videogamepage.html"> [Video games] </a> </li>
+        </ul>
+    </nav>
 </body>
-<!-- *OLD* design notes: maybe for the next subpages make titles in italics and creators in bold?-->
-
 </html>
