@@ -232,7 +232,14 @@ section p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.animaldesc {
+    text-align: center;
+}
+
 /* music subpage */
+.musicdesc {
+    text-align: center;
+}
 
 .musiccontainer {
     display: flex;
@@ -319,6 +326,10 @@ section p {
     text-align: center;
 }
 
+.gamedesc {
+    text-align: center;
+}
+
 .gamedescdiv {
     display: inline;
 }
@@ -330,6 +341,10 @@ section p {
 /* special font */
 .gamemain {
     font-family: "Merriweather", serif;
+}
+
+.gameadd {
+    text-align: center;
 }
 
 .gameadddiv {
@@ -364,17 +379,16 @@ section p {
         flex-direction: column;
         gap: 15px;
     }
-}
-
-@media only screen and (max-width: 1012px) {
-    .animaltextbreak {
+        .animaltextbreak {
         display: block;
     }
 
     .animaltextbreak2 {
         display: block;
     }
+}
 
+@media only screen and (max-width: 1012px) {
     .homeintro {
         width: 500px;
     }
@@ -540,6 +554,10 @@ section p {
 
 /* this fixes awkward text breaks */
 @media only screen and (max-width: 598px) {
+    .animaldesc {
+        font-size: 1.1em;
+    }
+    
     .homeintro {
         width: 260px;
         max-width: none;
@@ -548,13 +566,13 @@ section p {
     #homedesc {
         width: 250px;
     }
-
-    .animaldesc {
-        width: 250px;
+    
+    .gamedesc {
+        font-size: 1em;
     }
 
-    .gamedesc {
-        width: 300px;
+    .gameadd {
+        font-size: 0.9em;
     }
 /* the four classes below targeted with display none are the icons, i made them stop rendering at a small resolution to stop a strange line break on one subpage, then figured i should apply this to all of them for consistency */
     .gamepad {
