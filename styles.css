@@ -80,20 +80,8 @@ figure {
     font-weight: bolder;
 }
 
-/* considering i'm applying the same stats to three different elements, I feel I could've just made this one class and just attached said class to the three elements I've targeted. */
-.homecatimage {
-    width: 90%;
-    aspect-ratio: 10 / 10;
-    margin: auto;
-}
-
-.homecatimage2 {
-    width: 90%;
-    aspect-ratio: 10 / 10;
-    margin: auto;
-}
-
-.homecatimage3 {
+/* *OLD* considering i'm applying the same stats to three different elements, I feel I could've just made this one class and just attached said class to the three elements I've targeted. */
+.homeimage {
     width: 90%;
     aspect-ratio: 10 / 10;
     margin: auto;
@@ -158,15 +146,15 @@ figure {
     grid-area: con;
 }
 
-.homecatimage {
+#homecatimage {
     grid-area: img;
 }
 
-.homecatimage2 {
+#homecatimage2 {
     grid-area: img2;
 }
 
-.homecatimage3 {
+#homecatimage3 {
     grid-area: img3;
 }
 
@@ -186,9 +174,6 @@ figure {
     max-height: 50px;
 }
 
-
-
-
 /* animal subpage */
 /* here i was attempting to have the text change into two different lines at different screen resolutions but it did not work as intended. */
 .animaltitle {
@@ -196,10 +181,6 @@ figure {
 }
 
 .animaltextbreak {
-    display: inline;
-}
-
-.animaltextbreak2 {
     display: inline;
 }
 
@@ -266,7 +247,6 @@ section p {
     gap: 150px;
 }
 
-
 .musicsection {
     font-weight: bolder;
     font-size: 20px;
@@ -274,18 +254,7 @@ section p {
     flex: 1 1 250px;
 }
 
-.genretitle {
-    text-align: center;
-    font-size: 135%;
-    border-bottom: 5px solid rgb(0, 0, 0);
-}
-
-.artisttitle {
-    font-size: 135%;
-    border-bottom: 5px solid rgb(0, 0, 0);
-}
-
-.songtitle {
+.musiccolumntitle {
     font-size: 135%;
     border-bottom: 5px solid rgb(0, 0, 0);
 }
@@ -303,7 +272,7 @@ section p {
     flex-wrap: wrap;
 }
 
-.contentbox {
+.gamecontentbox {
     text-align: center;
     height: 270px;
     padding-left: 50px;
@@ -331,10 +300,6 @@ section p {
 }
 
 .gamedescdiv {
-    display: inline;
-}
-
-.gamedescdiv2 {
     display: inline;
 }
 
@@ -380,10 +345,6 @@ section p {
         gap: 15px;
     }
         .animaltextbreak {
-        display: block;
-    }
-
-    .animaltextbreak2 {
         display: block;
     }
 }
@@ -436,15 +397,15 @@ section p {
         grid-area: con;
     }
 
-    .homecatimage {
+    #homecatimage {
         grid-area: img;
     }
 
-    .homecatimage2 {
+    #homecatimage2 {
         grid-area: img2;
     }
 
-    .homecatimage3 {
+    #homecatimage3 {
         grid-area: img3;
     }
 
@@ -452,15 +413,7 @@ section p {
         grid-area: fot;
     }
 
-    .homecatimage {
-        width: 50%;
-    }
-
-    .homecatimage2 {
-        width: 50%;
-    }
-
-    .homecatimage3 {
+    .homeimage {
         width: 50%;
     }
 
@@ -472,7 +425,7 @@ section p {
         width: 100%;
     }
 
-    .contentbox {
+    .gamecontentbox {
         display: flex;
         justify-content: space-around;
         flex-direction: column;
@@ -534,22 +487,6 @@ section p {
         flex-direction: column;
         gap: 15px;
     }
-
-    .genretitle {
-        margin-left: 0%;
-        font-size: 135%;
-    }
-
-    .artisttitle {
-        font-size: 135%;
-        margin-right: 0%;
-    }
-
-    .songtitle {
-        font-size: 135%;
-        margin-right: 0%;
-    }
-
 }
 
 /* this fixes awkward text breaks */
@@ -574,6 +511,10 @@ section p {
     .gameadd {
         font-size: 0.9em;
     }
+
+    .gameinsidedesc {
+        width: 80%;
+    }
 /* the four classes below targeted with display none are the icons, i made them stop rendering at a small resolution to stop a strange line break on one subpage, then figured i should apply this to all of them for consistency */
     .gamepad {
         display: none;
@@ -594,6 +535,4 @@ section p {
     .musiccontainer li {
         width: 250px;
     }
-
-
 }
